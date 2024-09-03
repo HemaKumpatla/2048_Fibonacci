@@ -1,0 +1,148 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title[Your short title]{\textbf{2048 FIBONACCI}}
+\author{ Ravella Jahnavi: 21B01A0488:ECE\\
+        Chaganti Devi Sree: 21b01a06119: AIML \\
+        Kocharla Ruthvika: 21b01a6137: AIML \\
+        Kumpatla Hema Nageswari Devi: 21b01a5460: AIDS \\
+        STK SG Vaijayanthi: 21b01a0359: MECH\\}
+\institute{\Large\textbf{ SHRI VISHNU ENGINEERING COLLEGE FOR WOMEN}}
+\date{04th February,2023}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\section{\textbf{Introduction}}
+
+\begin{frame}{Introduction}
+
+\begin{itemize}
+  \item The Fibonacci version of 2048 game.In this game the tiles are moved in left,right,up and down directions to add and form fibonacci series!!\\
+  \textbf {The Fibonacci sequence is a type series where each number is the sum of the two that precede it. It starts from 0 and 1 usually. The Fibonacci sequence is given by 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, and so on. The numbers in the Fibonacci sequence are also called Fibonacci numbers.}
+  \end{itemize}
+  \end{frame}
+
+\vskip 1cm
+
+
+
+\section{Some \LaTeX{} Examples}
+
+\subsection{Tables and Figures}
+
+\begin{frame}{\textbf{Approach}}
+
+\begin{itemize}
+\item Firstly we analyzed the problem statement assigned to us.Later,we looked for sources in Google.We surfed various websites and took references.
+\item By the reference taken from Google and the logic we learnt from Python Programming in our acadamics,we created a suitable code for problem statement.
+\item After completing the code,we first used CMD to run the code.After that we tried to run our code in PYCHARM. 
+\item First,we faced some small issues while running in PYCHARM.
+\item After making few changes in the code,successfully code ran without any problems.
+\end{itemize}
+
+% Commands to include a figure:
+%\begin{figure}
+%\includegraphics[width=\textwidth]{your-figure's-file-name}
+%\caption{\label{fig:your-figure}Caption goes here.}
+%\end{figure}
+
+
+
+\end{frame}
+
+\begin{frame}{\textbf {Learning}}
+
+\item \textbf{Python basically had numerous built-in modules.One of these modules are random which we use to make random variables}.
+
+This random module has a various methods such as:
+\begin{itemize}
+
+ \item \textbf{randrange():} Returns a random number between the given range
+\item \textbf{randint():}	randint() function to get a random integer number from the inclusive range. 
+\item \textbf{random():}randrange() function to get a random integer number from the given exclusive range by specifying the increment.
+\item \textbf{setstate():} Restores the internal state of the random number generator
+\item \textbf{getrandbits():}Returns a number representing the random bits
+\item \textbf{SYS module:}The sys module in Python provides various functions and variables that are used to manipulate different parts of the Python runtime environment.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{\textbf{Challenges}}
+\begin{itemize}
+    \item Firstly, we faced a problem in understanding the problem statement and it took us sometime to understand.
+    \item To overcome this problem, we surfed various websites in Google to get proper information about problem information.
+    \item By taking reference from the code we found online,we wrote our own code and first executed it in CMD.
+    \item After executing the code in CMD we found some random syntax errors, and functional errors. So, we corrected all the errors raised.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+ {\textbf{Statistics}}
+  \item\Large \textbf{Number of lines of Code :} 165
+  \item\Large \textbf{Number of functions :} 8
+  \begin{itemize}
+    
+  
+  \item The fill rand pos() function takes in a game board and a number of random positions to fill with the value 1.
+  \item The generate board() function creates a new game board with a given number of rows and columns, filled with the value 0. 
+  \item The generate fib cache() function generates a cache of the Fibonacci series up to a given number of terms and creates a map of those terms to their position in the series. 
+  \end{itemize}
+  
+  \end {frame}
+ 
+  
+  
+  \begin{frame}{}
+    \begin{itemize}
+  \item The print board() function simply prints out the current state of the game board.  
+  \item The get sum list() function takes in a list of values and a Fibonacci cache, and returns a new list of the sums of adjacent elements in the input list that are also in the Fibonacci series.
+  \item The update board() function takes in a game board, a specific row or column to update, a list of values to update it with, and a direction (up, down, left, or right)
+  \item The mov dir() function is defined to move the tiles of the game. If we give 8 the tile moves upward. If we give 4, the tile moves left side. If we give 6, the tile moves right side. If we give 2 the tile moves downward.
+  \item Finally, the check win() function helps us to to produce 1's when needed.
+   \end{itemize}
+
+\end{frame}
+
+\begin{frame}{\textbf{Demo }}
+\item To run a demo of this code, you would need to first create a game board by calling the generate board function and passing in the desired number of rows and columns.
+\item You would then need to generate the Fibonacci series and map by calling the generate fib function and passing number of rows and columns.
+
+\item This would generate a 2x2 board, randomly place one 1 on the board, print the initial board, prompt the user to enter a direction to move the elements, move the elements in that direction and update the board, and then print the updated board.
+\end{frame}
+
+\begin{frame}{\textbf{Screenshots}}
+\usepackage{}
+\includegraphics[width = 0.9\textwidth]{Screenshot.png}
+
+    
+\end{frame}
+
+\begin{frame}\begin{center}
+\Huge {Thank You}
+\end{center}
+   
+\end{frame}
+ \end{document}
+
